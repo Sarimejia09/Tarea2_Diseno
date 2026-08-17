@@ -1,4 +1,4 @@
-# Actividad: Análisis de Código (Clase Libro)
+# Actividad: Análisis de Código 
 
 ## Enunciado
 

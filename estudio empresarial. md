@@ -1,0 +1,21 @@
+Preguntas 
+1. ¿Por qué las clases y objetos eliminan el riesgo de asociar una mascota con el dueño equivocado?
+Ya que en POO los datos de cada mascote sen encuentra dentro de su propio objeto.La mascota tiene ciertoas atributos los cuales son(nombre, especie y edad). Y ademas este tiene una referencia directa al objeto correspondiente. 
+Asi, la informacion puede quedar agrupada en un mismo espacio y no depende de posiciones de diferentes arreglos. Por ejemplo en este caso un, si (max) tiene 3 años, esos 3 años hacesn parte directamente del objeto (MAX), evitando asi mover o eliminar una posicion que temine en una asociacion con otro dueño. 
+
+2. Si se quiere prohibir mascotas con edades negativas o mayores a 30 años, ¿en qué lugar se programa?
+La restriccion que nos serviria se debe programarse dentro de la clase (Mascota), especificamente en el metodo en el cual permite asignar o modificar la edad, como un (Set edad).
+ej:
+void setEdad(int nuevaEdad) {
+    if (nuevaEdad >= 0 && nuevaEdad <= 30) {
+        edad = nuevaEdad;
+    }
+}
+
+En este ejemplo se puede presensiar el principio de encapsulamiento ya que la clase controla como se pueden mover sus propios datos.
+
+3. ¿Cómo aplicarías el principio de Abstracción para agregar un módulo de entrenamiento canino?
+En este caso de podria crear una clase como (EntrenaminetoCanino), que este se encargue de manejar unicamente las informacion y ciertas funciones relacionadas con el entrenamiento. 
+Ej 
+Tipo de entrenamiento, La duracion, Nivel de entrenamiento y el estado de entremanieto. 
+La abstraccion nos permte en este caso que el resto del sistemas no tenga que conocer todos los detalles internos de el como funciona el entrenamiento, en este solo se necesita utilizar las funciones que el tipo de clase nos proporciona. 

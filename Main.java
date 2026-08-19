@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * Clase principal del sistema de estacionamiento.
+ */
 public class Main {
 
     public static void main(String[] args) {
